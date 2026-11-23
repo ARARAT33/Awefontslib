@@ -10,8 +10,7 @@ import { PairingView } from './components/PairingView';
 import { FontDetailModal } from './components/FontDetailModal';
 import { ProjectKitDrawer } from './components/ProjectKitDrawer';
 import { LocalFontInspectorModal } from './components/LocalFontInspectorModal';
-import { EmbedHostModal } from './components/EmbedHostModal';
-import { loadEmbedHostConfig, saveEmbedHostConfig } from './utils/fontEmbedder';
+import { loadEmbedHostConfig } from './utils/fontEmbedder';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<AppTab>('library');
@@ -19,8 +18,7 @@ export default function App() {
   const [inspectedFont, setInspectedFont] = useState<FontEntry | null>(null);
   const [kitOpen, setKitOpen] = useState(false);
   const [localInspectorOpen, setLocalInspectorOpen] = useState(false);
-  const [hostModalOpen, setHostModalOpen] = useState(false);
-  const [hostConfig, setHostConfig] = useState<EmbedHostConfig>(() => loadEmbedHostConfig());
+  const [hostConfig] = useState<EmbedHostConfig>(() => loadEmbedHostConfig());
   const [kitIds, setKitIds] = useState<string[]>(['noto-sans-armenian', 'fraunces']);
   const [studioExternalChar, setStudioExternalChar] = useState<string | null>(null);
 
@@ -41,11 +39,6 @@ export default function App() {
   const handleSendCharToStudio = (char: string) => {
     setStudioExternalChar(char);
     setActiveTab('studio');
-  };
-
-  const handleSaveHostConfig = (next: EmbedHostConfig) => {
-    setHostConfig(next);
-    saveEmbedHostConfig(next);
   };
 
   return (
@@ -70,7 +63,6 @@ export default function App() {
             onOpenLocalInspector={() => setLocalInspectorOpen(true)}
             onOpenStudio={() => setActiveTab('studio')}
             onOpenSources={() => setActiveTab('sources')}
-            onOpenHostManager={() => setHostModalOpen(true)}
             hostConfig={hostConfig}
             initialSourceId={sourceFilterFromDirectory}
           />
@@ -94,7 +86,6 @@ export default function App() {
         {activeTab === 'pairings' && (
           <PairingView
             hostConfig={hostConfig}
-            onOpenHostManager={() => setHostModalOpen(true)}
           />
         )}
       </main>
@@ -121,13 +112,6 @@ export default function App() {
             >
               API Documentation
             </a>
-            <button
-              type="button"
-              onClick={() => setHostModalOpen(true)}
-              className="text-[#B43E22] font-medium hover:underline cursor-pointer"
-            >
-              Manage Embed Host
-            </button>
             <button
               type="button"
               onClick={() => setActiveTab('library')}
@@ -166,7 +150,6 @@ export default function App() {
         inKit={inspectedFont ? kitIdSet.has(inspectedFont.id) : false}
         onToggleKit={handleToggleKit}
         hostConfig={hostConfig}
-        onOpenHostManager={() => setHostModalOpen(true)}
       />
 
       <ProjectKitDrawer
@@ -185,13 +168,6 @@ export default function App() {
         onSendCharToStudio={handleSendCharToStudio}
       />
 
-      <EmbedHostModal
-        open={hostModalOpen}
-        onClose={() => setHostModalOpen(false)}
-        config={hostConfig}
-        onSaveConfig={handleSaveHostConfig}
-        fonts={FONTS_CATALOG}
-      />
     </div>
   );
 }
