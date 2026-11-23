@@ -1,0 +1,33 @@
+{
+  "name": "AWEFonts unified font platform",
+  "version": 1,
+  "updatedAt": "2026-11-23",
+  "uiOrigin": "https://fonts.aweconnect.dpdns.org",
+  "apiOrigin": "https://fonts.api.aweconnect.dpdns.org",
+  "localLibrary": {
+    "catalog": "/api/fonts.json",
+    "languages": "/api/v1/languages.json",
+    "scripts": "/api/v1/scripts.json",
+    "stats": "/api/v1/stats.json",
+    "fontCss": "/fonts/{font-id}.css",
+    "fontBinary": "/fonts/{font-file}"
+  },
+  "globalApi": {
+    "catalog": "/v1/catalog.json",
+    "languages": "/v1/languages.json",
+    "languageRegistry": "/v1/language-registry.json",
+    "languageCmapCoverage": "/v1/language-cmap-coverage.json",
+    "cssIndex": "/v1/css-index.json",
+    "embedLoader": "/v1/embed.v6.js",
+    "openapi": "/v1/openapi.json",
+    "health": "/v1/health.json",
+    "legacyCssPresets": "/api/css/{font-id}.css"
+  },
+  "integration": {
+    "primaryUi": "Awefontslib React application",
+    "fontDelivery": "Awefontslib local static font assets",
+    "globalMetadata": "AWEFONTS static API",
+    "legacyCssCompatibility": true,
+    "backendRequired": false
+  }
+}
