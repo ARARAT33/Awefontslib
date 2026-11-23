@@ -16,7 +16,6 @@ interface ProjectKitDrawerProps {
   onRemoveFont: (id: string) => void;
   onClearKit: () => void;
   hostConfig: EmbedHostConfig;
-  onOpenHostManager: () => void;
 }
 
 export const ProjectKitDrawer: React.FC<ProjectKitDrawerProps> = ({
@@ -26,7 +25,6 @@ export const ProjectKitDrawer: React.FC<ProjectKitDrawerProps> = ({
   onRemoveFont,
   onClearKit,
   hostConfig,
-  onOpenHostManager,
 }) => {
   const [copiedCss, setCopiedCss] = useState(false);
   const [exporting, setExporting] = useState(false);
@@ -133,13 +131,6 @@ export const ProjectKitDrawer: React.FC<ProjectKitDrawerProps> = ({
                     <Globe className="w-3.5 h-3.5 text-[#B43E22] shrink-0" />
                     Host: {hostDisplay}
                   </span>
-                  <button
-                    type="button"
-                    onClick={onOpenHostManager}
-                    className="font-sans font-medium text-[#B43E22] hover:underline cursor-pointer shrink-0"
-                  >
-                    Change Host
-                  </button>
                 </div>
 
                 <div className="flex items-center justify-between mb-2">
