@@ -24,7 +24,6 @@ interface FontDetailModalProps {
   inKit: boolean;
   onToggleKit: (font: FontEntry) => void;
   hostConfig: EmbedHostConfig;
-  onOpenHostManager: () => void;
 }
 
 type EmbedTab =
@@ -50,7 +49,6 @@ export const FontDetailModal: React.FC<FontDetailModalProps> = ({
   inKit,
   onToggleKit,
   hostConfig,
-  onOpenHostManager,
 }) => {
   const [embedTab, setEmbedTab] = useState<EmbedTab>('html');
   const [copied, setCopied] = useState(false);
@@ -479,13 +477,6 @@ export const FontDetailModal: React.FC<FontDetailModalProps> = ({
                 <Globe className="w-3.5 h-3.5 text-[#B43E22] shrink-0" />
                 <span className="truncate font-mono">Active Embed Link: {resolvedCssUrl}</span>
               </div>
-              <button
-                type="button"
-                onClick={onOpenHostManager}
-                className="text-xs font-medium text-[#B43E22] hover:underline cursor-pointer shrink-0"
-              >
-                Change Embed Host
-              </button>
             </div>
 
             <div className="flex flex-wrap items-center justify-between gap-3">
