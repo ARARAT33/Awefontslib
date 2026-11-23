@@ -159,7 +159,6 @@ export default function App() {
         onRemoveFont={(id) => setKitIds((prev) => prev.filter((item) => item !== id))}
         onClearKit={() => setKitIds([])}
         hostConfig={hostConfig}
-        onOpenHostManager={() => setHostModalOpen(true)}
       />
 
       <LocalFontInspectorModal
