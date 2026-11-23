@@ -45,10 +45,9 @@ const PRESET_PAIRINGS: {
 
 interface PairingViewProps {
   hostConfig: EmbedHostConfig;
-  onOpenHostManager: () => void;
 }
 
-export const PairingView: React.FC<PairingViewProps> = ({ hostConfig, onOpenHostManager }) => {
+export const PairingView: React.FC<PairingViewProps> = ({ hostConfig }) => {
   const [primaryId, setPrimaryId] = useState('fraunces');
   const [secondaryId, setSecondaryId] = useState('noto-sans-armenian');
   const [headline, setHeadline] = useState(PRESET_PAIRINGS[0].headline);
@@ -227,13 +226,6 @@ export const PairingView: React.FC<PairingViewProps> = ({ hostConfig, onOpenHost
             <div className="flex items-center justify-between gap-2">
               <span className="text-xs font-medium text-[#57534E]">Combined CSS</span>
               <div className="flex items-center gap-3">
-                <button
-                  type="button"
-                  onClick={onOpenHostManager}
-                  className="text-xs text-[#6E6A63] hover:text-[#B43E22] hover:underline cursor-pointer"
-                >
-                  Edit Host
-                </button>
                 <button
                   type="button"
                   onClick={handleCopy}
