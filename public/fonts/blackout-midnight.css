@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Blackout Midnight';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./blackout-midnight-0.woff2') format('woff2');
+}

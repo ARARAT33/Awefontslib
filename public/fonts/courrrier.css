@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Courrrier';
+  src: url('./courrrier-0.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

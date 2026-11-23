@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Kelvinch';
+  src: url('./kelvinch-0.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kelvinch';
+  src: url('./kelvinch-1.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kelvinch';
+  src: url('./kelvinch-2.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

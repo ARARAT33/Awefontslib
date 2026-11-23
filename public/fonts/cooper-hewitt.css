@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Cooper Hewitt';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./cooper-hewitt-0.woff2') format('woff2');
+}

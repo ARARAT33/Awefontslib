@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Noto Fangsong KSSVertical';
+  src: url('./noto-fangsong-kssvertical-0.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

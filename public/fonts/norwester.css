@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Norwester';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./norwester-0.woff2') format('woff2');
+}

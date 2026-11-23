@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'HMK Armenian Display';
+  src: url('./hmk-armenian-display-0.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HMK Armenian Display';
+  src: url('./hmk-armenian-display-1.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'DSEG14 Classic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./dseg14-classic-0.woff2') format('woff2');
+}

@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'DejaVu Math';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./dejavu-math-0.woff2') format('woff2');
+}

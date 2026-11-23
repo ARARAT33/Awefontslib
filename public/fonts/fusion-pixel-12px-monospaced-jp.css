@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Fusion Pixel 12px Monospaced JP';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fusion-pixel-12px-monospaced-jp-0.woff2') format('woff2');
+}

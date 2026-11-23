@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'DSEG Weather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./dseg-weather-0.woff2') format('woff2');
+}

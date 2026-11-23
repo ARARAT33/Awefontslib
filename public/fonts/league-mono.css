@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'League Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./league-mono-0.woff2') format('woff2');
+}

@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Bagnard';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./bagnard-0.woff2') format('woff2');
+}

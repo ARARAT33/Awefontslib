@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Fusion Kai T';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fusion-kai-t-0.woff2') format('woff2');
+}

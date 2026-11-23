@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Bluu Next';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./bluu-next-0.woff2') format('woff2');
+}

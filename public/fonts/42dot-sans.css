@@ -1,0 +1,48 @@
+/* 0 */
+@font-face {
+  font-family: '42dot Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./42dot-sans-0.woff2') format('woff2');
+}
+/* 2 */
+@font-face {
+  font-family: '42dot Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./42dot-sans-1.woff2') format('woff2');
+}
+/* 3 */
+@font-face {
+  font-family: '42dot Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./42dot-sans-2.woff2') format('woff2');
+}
+/* 4 */
+@font-face {
+  font-family: '42dot Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./42dot-sans-3.woff2') format('woff2');
+}
+/* 5 */
+@font-face {
+  font-family: '42dot Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./42dot-sans-4.woff2') format('woff2');
+}
+/* 6 */
+@font-face {
+  font-family: '42dot Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./42dot-sans-5.woff2') format('woff2');
+}

@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Chunk Five';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./chunk-five-0.woff2') format('woff2');
+}

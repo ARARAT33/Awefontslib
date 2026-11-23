@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'DSEG7 SEGG CHAN Mini';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./dseg7-segg-chan-mini-0.woff2') format('woff2');
+}

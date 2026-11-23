@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Aileron';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./aileron-0.woff2') format('woff2');
+}

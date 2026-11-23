@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+  font-family: 'Argentum Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./argentum-sans-0.woff2') format('woff2');
+}
