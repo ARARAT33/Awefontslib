@@ -105,6 +105,22 @@ export default function App() {
             Pangloss Type · 100% Static Self-Hosted Archive ({FONTS_CATALOG.length.toLocaleString()} Fonts) &amp; Local OpenType Studio
           </div>
           <div className="flex flex-wrap items-center gap-5">
+            <a
+              href="https://fonts.api.aweconnect.dpdns.org/v1/catalog.json"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#141413] cursor-pointer"
+            >
+              AWEFonts API Catalog
+            </a>
+            <a
+              href="https://fonts.api.aweconnect.dpdns.org/v1/openapi.json"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#141413] cursor-pointer"
+            >
+              API Documentation
+            </a>
             <button
               type="button"
               onClick={() => setHostModalOpen(true)}
