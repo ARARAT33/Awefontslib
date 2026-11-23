@@ -17,7 +17,6 @@ interface LibraryViewProps {
   onOpenLocalInspector: () => void;
   onOpenStudio: () => void;
   onOpenSources: () => void;
-  onOpenHostManager: () => void;
   hostConfig: EmbedHostConfig;
   initialSourceId?: string;
 }
@@ -41,7 +40,6 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
   onOpenLocalInspector,
   onOpenStudio,
   onOpenSources,
-  onOpenHostManager,
   hostConfig,
   initialSourceId = 'all',
 }) => {
@@ -193,14 +191,6 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
           </div>
 
           <div className="lg:col-span-5 flex flex-wrap lg:justify-end gap-2.5">
-            <button
-              type="button"
-              onClick={onOpenHostManager}
-              className="inline-flex items-center gap-2 px-3.5 py-2.5 text-sm font-medium bg-white border border-stone-300 text-[#141413] rounded-lg hover:border-[#B43E22] hover:text-[#B43E22] transition-colors cursor-pointer whitespace-nowrap shrink-0"
-            >
-              <Globe className="w-4 h-4" />
-              Embed Host &amp; API
-            </button>
             <button
               type="button"
               onClick={onOpenStudio}
@@ -418,7 +408,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
         </div>
       </section>
 
-      {/* Results & Active Embed Host Bar */}
+      {/* Results */}
       <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-[#6E6A63]">
         <div className="flex flex-wrap items-center gap-4">
           <span className="tabular-nums">
@@ -443,15 +433,6 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
           )}
         </div>
 
-        <button
-          type="button"
-          onClick={onOpenHostManager}
-          className="inline-flex items-center gap-1.5 font-mono text-[11px] text-[#57534E] hover:text-[#B43E22] cursor-pointer"
-        >
-          <Globe className="w-3.5 h-3.5 shrink-0" />
-          <span>Embeds route via: {activeHostDisplay}</span>
-          <span className="underline font-sans font-medium text-[#B43E22]">Edit</span>
-        </button>
       </div>
 
       {/* Specimen Grid */}
